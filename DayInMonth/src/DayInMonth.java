@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class DayInMonth {
+	public static void main(String []args) {
+		String[] check = {"January", "February", "March", "April", "May", "June", "July",
+                "August", "September", "October", "November", "December","Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+                "Aug", "Sep", "Oct", "Nov", "Dec","1","2","3","4","5","6","7","8","9","10","11","12"};
+		
+		Scanner keybroad  = new Scanner(System.in);
+		System.out.print("Enter month: ");
+		String month = keybroad.nextLine();
+		System.out.print("Enter year: ");
+		String year = keybroad.nextLine();
+		
+	    if( month.equals(check[0]) || month.equalsIgnoreCase(check[12]) || month.equals(check[24])) {
+	    	System.out.println("Have 31 days.");
+	    }
+	     
+	}
+}
